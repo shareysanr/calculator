@@ -9,6 +9,7 @@
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
+    font-size: 35px;
 }
 .buttons {
     display: grid;
