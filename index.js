@@ -13,6 +13,13 @@ buttons.map( button => {
                     display.innerText = display.innerText.slice(0, -1)
                 }
                 break;
+            case '=':
+                try {
+                    display.innerText = eval(display.innerText);
+                } catch {
+                    display.innerText = 'Syntax Error';
+                }
+                break;
             default:
                 display.innerText += e.target.innerText;
         }
